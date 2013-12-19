@@ -1,0 +1,51 @@
+Source: ptux-sdk
+Section: devel
+Priority: extra
+Maintainer: Ryan Kuester <rkuester@insymbols.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+
+Package: ptux-sdk
+Architecture: all
+Description: Pragmatux SDK (common packages)
+ This metapackage installs packages needed for development of Pragmatux
+ operating systems.
+Depends:
+ emdebian-archive-keyring,
+ binutils-multiarch,
+ dpkg-dev,
+ make,
+ pkg-config,
+ devscripts,
+ fakeroot,
+ dh-make,
+ dupload,
+ rgb2565,
+ git,
+ git-buildpackage,
+ mkisoarchive,
+ build-essential,
+ apt-transport-https,
+ ${misc:Depends}
+
+Package: ptux-sdk-armel
+Architecture: all
+Description: Pragmatux SDK (armel targets)
+ This metapackage installs packages needed for development of Pragmatux
+ operating systems on targets using the armel architecture.
+Depends:
+ ptux-sdk (= ${binary:Version}),
+ gcc-4.4-arm-linux-gnueabi,
+ g++-4.4-arm-linux-gnueabi,
+ dpkg-cross,
+ xapt,
+ ${misc:Depends}
+
+Package: ptux-sdk-amd64
+Architecture: all
+Description: Pragmatux SDK (amd64 targets)
+ This metapackage installs packages needed for development of Pragmatux
+ operating systems on targets using the amd64 architecture.
+Depends:
+ ptux-sdk (= ${binary:Version}),
+ ${misc:Depends}
