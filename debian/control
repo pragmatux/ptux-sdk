@@ -17,6 +17,7 @@ Depends:
  make,
  pkg-config,
  devscripts,
+ devscripts-ptux,
  fakeroot,
  dh-make,
  dupload,
