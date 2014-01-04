@@ -20,7 +20,7 @@ Depends:
  devscripts-ptux,
  fakeroot,
  dh-make,
- dupload,
+ dput-ng,
  rgb2565,
  git,
  git-buildpackage,
