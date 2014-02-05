@@ -29,19 +29,6 @@ Depends:
  apt-transport-https,
  ${misc:Depends}
 
-Package: ptux-sdk-armel
-Architecture: all
-Description: Pragmatux SDK (armel targets)
- This metapackage installs packages needed for development of Pragmatux
- operating systems on targets using the armel architecture.
-Depends:
- ptux-sdk (= ${binary:Version}),
- gcc-4.4-arm-linux-gnueabi,
- g++-4.4-arm-linux-gnueabi,
- dpkg-cross,
- xapt,
- ${misc:Depends}
-
 Package: ptux-sdk-amd64
 Architecture: all
 Description: Pragmatux SDK (amd64 targets)
@@ -50,3 +37,14 @@ Description: Pragmatux SDK (amd64 targets)
 Depends:
  ptux-sdk (= ${binary:Version}),
  ${misc:Depends}
+
+Package: ptux-sdk-armhf
+Architecture: all
+Description: Pragmatux SDK (armhf targets)
+ This metapackage installs packages needed for development of Pragmatux
+ operating systems on targets using the armhf architecture.
+Depends:
+ ptux-sdk (= ${binary:Version}),
+ gcc-arm-linux-gnueabihf-default-4.7,
+ ${misc:Depends}
+
