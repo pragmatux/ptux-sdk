@@ -24,6 +24,7 @@ Depends:
  dh-make,
  dput-ng,
  openssh-client,
+ python-paramiko,
  rgb2565,
  git,
  git-buildpackage,
