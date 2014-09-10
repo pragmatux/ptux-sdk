@@ -17,6 +17,7 @@ Depends:
  make,
  pkg-config,
  devscripts,
+ gdebi-core,
  equivs,
  devscripts-ptux,
  fakeroot,
