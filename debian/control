@@ -22,6 +22,7 @@ Depends:
  fakeroot,
  dh-make,
  dput-ng,
+ openssh-client,
  rgb2565,
  git,
  git-buildpackage,
