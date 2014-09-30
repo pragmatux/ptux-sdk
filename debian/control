@@ -52,3 +52,13 @@ Depends:
  gcc-arm-linux-gnueabihf-default-4.7,
  ${misc:Depends}
 
+Package: ptux-sdk-armel
+Architecture: all
+Description: Pragmatux SDK (armel targets)
+ This metapackage installs packages needed for development of Pragmatux
+ operating systems on targets using the armel architecture.
+Depends:
+ ptux-sdk (= ${binary:Version}),
+ gcc-arm-linux-gnueabi-default-4.7,
+ ${misc:Depends}
+
