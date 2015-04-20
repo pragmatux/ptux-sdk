@@ -50,6 +50,7 @@ Description: Pragmatux SDK (armhf targets)
 Depends:
  ptux-sdk (= ${binary:Version}),
  gcc-arm-linux-gnueabihf-default-4.7,
+ g++-arm-linux-gnueabihf-default-4.7,
  ${misc:Depends}
 
 Package: ptux-sdk-armel
