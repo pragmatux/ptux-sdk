@@ -49,8 +49,8 @@ Description: Pragmatux SDK (armhf targets)
  operating systems on targets using the armhf architecture.
 Depends:
  ptux-sdk (= ${binary:Version}),
- gcc-arm-linux-gnueabihf-default-4.7,
- g++-arm-linux-gnueabihf-default-4.7,
+ gcc-arm-linux-gnueabihf,
+ g++-arm-linux-gnueabihf,
  ${misc:Depends}
 
 Package: ptux-sdk-armel
@@ -60,6 +60,7 @@ Description: Pragmatux SDK (armel targets)
  operating systems on targets using the armel architecture.
 Depends:
  ptux-sdk (= ${binary:Version}),
- gcc-arm-linux-gnueabi-default-4.7,
+ gcc-arm-linux-gnueabi,
+ g++-arm-linux-gnueabi,
  ${misc:Depends}
 
