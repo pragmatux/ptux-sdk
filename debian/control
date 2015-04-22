@@ -25,7 +25,6 @@ Depends:
  dput-ng,
  openssh-client,
  python-paramiko,
- rgb2565,
  git,
  git-buildpackage,
  mkisoarchive,
