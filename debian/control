@@ -62,3 +62,10 @@ Depends:
  gcc-arm-linux-gnueabi-default-4.7,
  ${misc:Depends}
 
+Package: apt-sources-ptux-sdk
+Architecture: all
+Depends: ${misc:Depends}
+Description: APT sources configuration for the Pragmatux SDK
+ This package installs configuration for APT sources containing packages
+ which constitute the Pragmatux SDK. These sources are preferred to sources 
+ at the default priority by means of an APT preference fragment.

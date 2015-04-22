@@ -1,0 +1,6 @@
+deb [arch=amd64 trusted=yes] http://packages.pragmatux.org/sdk 4.0 main
+deb-src [trusted=yes] http://packages.pragmatux.org/sdk 4.0 main
+deb [arch=amd64 trusted=yes] http://packages.pragmatux.org/emdebian-tools jessie main
+
+deb [arch=armel,armhf trusted=yes] http://packages.pragmatux.org/device 4.0 main
+deb-src [trusted=yes] http://packages.pragmatux.org/device 4.0 main

@@ -1,0 +1,2 @@
+pragmatux-sdk.list /etc/apt/sources.list.d
+pragmatux-sdk.pref /etc/apt/preferences.d
