@@ -1,0 +1,15 @@
+# This Gitlab CI script builds the Docker image for ptux-sdk and pushes it to
+# the project registry.
+
+image: docker:latest
+services:
+- docker:dind
+
+ptux-sdk-docker-image:
+  stage: deploy
+  variables:
+    TAG: $CI_REGISTRY_IMAGE/ptux-sdk:$CI_COMMIT_REF_NAME
+  script:
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  - docker build -t $TAG .
+  - docker push $TAG
