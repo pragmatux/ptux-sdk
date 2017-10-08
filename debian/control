@@ -63,10 +63,10 @@ Depends:
  g++-arm-linux-gnueabi,
  ${misc:Depends}
 
-Package: apt-sources-ptux-sdk
+Package: apt-sources-ptux-sdk-stretch
 Architecture: all
 Depends: ${misc:Depends}
 Description: APT sources configuration for the Pragmatux SDK
  This package installs configuration for APT sources containing packages
- which constitute the Pragmatux SDK. These sources are preferred to sources 
+ which constitute the Pragmatux SDK. These sources are preferred to sources
  at the default priority by means of an APT preference fragment.
