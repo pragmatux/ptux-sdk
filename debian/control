@@ -2,8 +2,8 @@ Source: ptux-sdk
 Section: devel
 Priority: extra
 Maintainer: Ryan Kuester <rkuester@insymbols.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 10.0.0)
+Standards-Version: 3.9.8
 
 Package: ptux-sdk
 Architecture: all
